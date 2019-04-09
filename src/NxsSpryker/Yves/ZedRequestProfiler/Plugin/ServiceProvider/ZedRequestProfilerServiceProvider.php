@@ -153,7 +153,7 @@ class ZedRequestProfilerServiceProvider extends AbstractPlugin implements Servic
      */
     protected function getPathToTemplates(): string
     {
-        $result = realpath(dirname(__DIR__) . '/../../Theme/default');
+        $result = realpath(dirname(__DIR__) . '/../Theme/default');
 
         if ($result === false) {
             throw new RuntimeException('Can not find template path!');
