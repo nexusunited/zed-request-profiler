@@ -1,0 +1,15 @@
+{% set icon %}
+    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+    <span class="sf-toolbar-value">{{ collector.requests | length }}</span>
+{% endset %}
+
+{% set text %}
+    {% spaceless %}
+        <div class="sf-toolbar-info-piece">
+            <b>Zed Requests</b>
+            <span class="sf-toolbar-status">{{ collector.requests | length }}</span>
+        </div>
+    {% endspaceless %}
+{% endset %}
+
+{% include '@WebProfiler/Profiler/toolbar_item.html.twig' with { 'link': profiler_url } %}

@@ -1,0 +1,13 @@
+{% extends '@WebProfiler/Profiler/layout.html.twig' %}
+
+{% block toolbar %}
+    {% include '@ZedRequestProfiler/collector/_partials/toolbar.html.twig' with { 'collector': collector } %}
+{% endblock %}
+
+{% block menu %}
+    {% include '@ZedRequestProfiler/collector/_partials/menu.html.twig' with { 'collector': collector } %}
+{% endblock %}
+
+{% block panel %}
+    {% include '@ZedRequestProfiler/collector/_partials/panel.html.twig' with { 'collector': collector } %}
+{% endblock %}
