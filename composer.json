@@ -39,5 +39,8 @@
       "composer run architecture-sniffer",
       "composer run phpstan"
     ]
+  },
+  "suggest": {
+    "nxsspryker/var-dumper-twig": "Better dumping of ZED requests and responses"
   }
 }
