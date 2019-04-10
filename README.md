@@ -15,8 +15,8 @@ Register the service provider in `Pyz\Yves\ShopApplication\YvesBootstrap`:
 
 namespace Pyz\Yves\ShopApplication;
 
-use Pyz\Yves\ZedRequestProfiler\Plugin\ServiceProvider\ZedRequestProfilerServiceProvider;
-use \SprykerShop\Yves\ShopApplication\YvesBootstrap as SprykerYvesBootstrap;
+use NxsSpryker\Yves\ZedRequestProfiler\Plugin\ServiceProvider\ZedRequestProfilerServiceProvider;
+use SprykerShop\Yves\ShopApplication\YvesBootstrap as SprykerYvesBootstrap;
 
 class YvesBootstrap extends SprykerYvesBootstrap
 {
@@ -35,7 +35,7 @@ Note: functionality provided by this bundle works only if the Web Profiler is en
 ```php
 <?php
 
-use \Spryker\Shared\Config\ConfigConstants;
+use Spryker\Shared\Config\ConfigConstants;
 
 $config[ConfigConstants::ENABLE_WEB_PROFILER] = true;
 ```
